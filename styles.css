@@ -20,6 +20,11 @@ body {
     --white: hsl(0, 0%, 100%);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .btn {
     width: fit-content;
     padding: 12px 30px;
@@ -254,3 +259,46 @@ body {
 
 
 /* Footer Section */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 200px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__item ul {
+    display: flex;
+    gap: 15px;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer__list li:hover {
+    color: var(--lime-green);
+    cursor: pointer;
+}
+
+.footer__list__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.footer__list__btn p {
+    color: var(--grayish-blue);
+}
